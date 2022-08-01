@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.SearchActivity">
+    <android.support.v7.widget.Toolbar
+        android:background="#000000"
+        app:titleTextColor="#f9f6f5"
+        app:title=""
+        android:id="@+id/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+    <EditText
+        android:hint="Nhap san pham can tim"
+        android:id="@+id/edtsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbarsearch"
+        >
+
+    </EditText>
+
+    <ListView
+        android:id="@+id/listviewsearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtsearch"
+
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="7dp">
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>
